@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotiviz - Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="data/spotify_image.jpg" alt="Spotify Logo"> Spotiviz
+        </div>
+        <h1>Analytics Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <button onclick="location.href='pages/overview.html'">Overview</button>
+            <button onclick="location.href='pages/music-analytics.html'">Music Analytics</button>
+            <button onclick="location.href='pages/podcast-analytics.html'">Podcast Analytics</button>
+            <button onclick="location.href='pages/kpi.html'">Key Performance Indicators</button>
+            <button onclick="location.href='pages/settings.html'">Settings</button>
+        </nav>
+
+        <main class="content">
+            <svg id="world-map"></svg>
+        </main>
+    </div>
+
+    <footer>
+        @ 2025 Spotify Analytics Dashboard
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
