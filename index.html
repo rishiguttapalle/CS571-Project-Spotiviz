@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotiviz - Analytics Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script src="https://d3js.org/topojson.v3.min.js"></script>
 </head>
 <body>
     <header>
@@ -15,25 +13,27 @@
         </div>
         <h1>Analytics Dashboard</h1>
     </header>
-
+ 
     <div class="container">
         <nav class="sidebar">
-            <button onclick="location.href='pages/overview.html'">Overview</button>
-            <button onclick="location.href='pages/music-analytics.html'">Music Analytics</button>
-            <button onclick="location.href='pages/podcast-analytics.html'">Podcast Analytics</button>
+            <!-- Changed to link back to index.html (home page) instead of overview.html -->
+            <button onclick="location.href='index.html'">Overview</button>
+            <button onclick="location.href='pages/music_analytics.html'">Music Analytics</button>
+            <button onclick="location.href='pages/podcast_analytics.html'">Podcast Analytics</button>
             <button onclick="location.href='pages/kpi.html'">Key Performance Indicators</button>
             <button onclick="location.href='pages/settings.html'">Settings</button>
         </nav>
-
+        
         <main class="content">
-            <svg id="world-map"></svg>
+            <!-- Google Maps iframe -->
+            <iframe id="map-iframe" src="https://www.google.com/maps/d/u/1/embed?mid=17y6YfCMUJgYbfpcaJwtRRz0p7x_hPyA&ehbc=2E312F" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </main>
     </div>
-
+    
     <footer>
         @ 2025 Spotify Analytics Dashboard
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

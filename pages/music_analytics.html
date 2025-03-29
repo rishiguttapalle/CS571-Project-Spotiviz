@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotiviz - Music Analytics</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Include D3.js for visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../data/spotify_image.jpg" alt="Spotify Logo"> Spotiviz
+        </div>
+        <h1>Music Analytics</h1>
+    </header>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <button onclick="location.href='../index.html'">Overview</button>
+            <button onclick="location.href='music_analytics.html'" class="active">Music Analytics</button>
+            <button onclick="location.href='podcast_analytics.html'">Podcast Analytics</button>
+            <button onclick="location.href='kpi.html'">Key Performance Indicators</button>
+            <button onclick="location.href='settings.html'">Settings</button>
+        </nav>
+        
+        <main class="content music-analytics-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="artist-select">Artist:</label>
+                    <select id="artist-select">
+                        <option value="all">All Artists</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="time-range">Time Range:</label>
+                    <select id="time-range">
+                        <option value="all">All Time</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="metric-select">Metric:</label>
+                    <select id="metric-select">
+                        <option value="streams">Total Streams</option>
+                        <option value="rank">Average Rank</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="visualization-container">
+                <h2 id="visualization-title">Listening Trends Over Time</h2>
+                <div id="chart-container">
+                    <svg id="trends-chart"></svg>
+                </div>
+                <div id="top-songs-container">
+                    <h3>Top Songs</h3>
+                    <ul id="top-songs-list"></ul>
+                </div>
+            </div>
+            
+            <div id="loading">Loading data...</div>
+        </main>
+    </div>
+    
+    <footer>
+        @ 2025 Spotify Analytics Dashboard
+    </footer>
+    
+    <!-- Fixed path to the JavaScript file -->
+    <script src="../music_analytics.js"></script>
+</body>
+</html>

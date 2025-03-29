@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotiviz - Analytics Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../data/spotify_image.jpg" alt="Spotify Logo"> Spotiviz
+        </div>
+        <h1>Analytics Dashboard</h1>
+    </header>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <!-- Link back to home page -->
+            <button onclick="location.href='../index.html'">Overview</button>
+            <button onclick="location.href='music-analytics.html'">Music Analytics</button>
+            <button onclick="location.href='podcast-analytics.html'">Podcast Analytics</button>
+            <button onclick="location.href='kpi.html'">Key Performance Indicators</button>
+            <button onclick="location.href='settings.html'">Settings</button>
+        </nav>
+        
+        <main class="content">
+            <!-- Same Google Maps iframe as on home page -->
+            <iframe id="map-iframe" src="https://www.google.com/maps/d/u/1/embed?mid=17y6YfCMUJgYbfpcaJwtRRz0p7x_hPyA&ehbc=2E312F" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </main>
+    </div>
+    
+    <footer>
+        @ 2025 Spotify Analytics Dashboard
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
