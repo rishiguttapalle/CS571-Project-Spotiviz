@@ -31,15 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
             buttons[0].classList.add('active');
         } else if (path.includes('music_analytics.html')) {
             buttons[1].classList.add('active');
-        } else if (path.includes('podcast_analytics.html')) {
-            buttons[2].classList.add('active');
         } else if (path.includes('kpi.html')) {
-            buttons[3].classList.add('active');
+            buttons[2].classList.add('active');
         } else if (path.includes('settings.html')) {
-            buttons[4].classList.add('active');
+            buttons[3].classList.add('active');
         }
     }
     
     // Run button highlighting
     highlightActiveButton();
+
+    
+
 });

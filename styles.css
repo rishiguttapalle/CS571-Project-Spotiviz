@@ -70,7 +70,6 @@ h1 {
     flex-grow: 1;
     display: flex;
     align-items: stretch;
-    justify-content: center;
     padding: 20px;
 }
 
@@ -106,6 +105,7 @@ footer {
 }
 
 
+
 /* Styles for Music Analytics page */
 .music-analytics-content {
     display: flex;
@@ -123,6 +123,8 @@ footer {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     align-self: flex-start;
+     width: 100%; 
 }
 
 .control-group {
@@ -236,4 +238,6 @@ footer {
     border-radius: 8px;
     z-index: 100;
     display: none;
+
 }
+
